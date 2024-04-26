@@ -1,68 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Learning JavaScript</h1>
-    <h3>Check the console</h3>
-    <script>
-        "use strict";
-        //console.log("Hello World!");
-        //for(var i=0; i<10; i++){
-        //    console.log(i);
-        //}
-        //let x = 10;
-        //console.log(x);
-        //var y = 20;
-        //console.log(y);
-        //var z = x+y;
-        //console.log(z);
-        //z = x-y;
-        //console.log(z);
-        //z = x*y;
-        //console.log(z);
-        //z = x/y;
-        //console.log(z); 
-        //z = x%y;
-        //console.log(z);
-        //z = x**y;
-        //console.log(z);
-        //z = x++;
-        //console.log(z);
-        //z = ++x;
-        //console.log(z);
-        //z = x--;
-        //console.log(z);
-        //z = --x;
-        //console.log(z);
-        //z = x==y;
-        //console.log(z);
-        //z = x===y;
-        //console.log(z);
-        //z = x!=y;
-        //console.log(z);
-        //z = x!==y;
-        //console.log(z);
-        //z = x<y;
-        //console.log(z);
-        //z = x>y;
-        //console.log(z);
-        //z = x<=y;
-        //console.log(z);
-        //z = x>=y;
-        //console.log(z);
-        //z = x<y || x==y;
-        //console.log(z);
-        //z = x<y && x==y;
-        //console.log(z);
-
-        function add(a, b){
-            return a+b;
+<html>
+    <head>
+        <title>My First JavaScript</title>
+    </head>
+    <style>
+        body{
+            background-color : black;
+            color : white;
         }
-        console.log(add(10, 20));
+        button{
+            height: 40px;
+            width : auto;
+            background-color: skyblue;
+            color: white;
+            border-radius: 25px;
+            border : none;
+            margin : 40px;
+        }
+        #demo{
+            border: 1px solid black;
+    }
+    </style>
+    <body>
+    <center>
+    <h2>My First JavaScript</h2>
+
+    <button type="button" onclick="fun()"> Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+    </center>
+    <script>
+        let count = 0
+        function fun(){
+            if (count == 0){
+                document.getElementById('demo').innerHTML = Date();
+                count = 1;
+            }
+            else{
+                document.getElementById('demo').innerHTML = '';
+                count = 0;
+            }
+        }
     </script>
-</body>
-</html>
+    </body>
+</html> 
